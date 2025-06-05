@@ -3,15 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { CommonModule } from '@angular/common';
+import { CustomCommonModule } from "./common/common-module";
+import { Home } from './home/home';
+import { About } from './about/about';
+import { Careers } from './careers/careers';
+import { ContactUs } from './contact-us/contact-us';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Home,
+    About,
+    Careers,
+    ContactUs
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    CommonModule,
+    CustomCommonModule
+],
   providers: [
     provideBrowserGlobalErrorListeners()
   ],

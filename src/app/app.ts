@@ -1,17 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import Aos from 'aos';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: false,
   styleUrl: './app.scss'
 })
-export class App implements OnInit{
+export class App{
   protected title = 'spark';
   isCollapsed = true;
-
-  ngOnInit(): void {
-    Aos.init();
-  }
-
 }
