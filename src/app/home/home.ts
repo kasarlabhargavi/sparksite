@@ -5,10 +5,42 @@ import Aos from 'aos';
   selector: 'app-home',
   standalone: false,
   templateUrl: './home.html',
-  styleUrl: './home.scss'
+  styleUrl: './home.scss',
 })
-export class Home implements OnInit{
+export class Home implements OnInit {
   ngOnInit(): void {
     Aos.init();
   }
+  brands  = [
+    { img: '/images/brand-logos/apsc-logo.png' },
+    { img: '/images/brand-logos/boditech.jpg' },
+    { img: '/images/brand-logos/cytek.png ' },
+    { img: '/images/brand-logos/diatron.png ' },
+    { img: '/images/brand-logos/dlab.png ' },
+    { img: '/images/brand-logos/medica.png' },
+    { img: '/images/brand-logos/origio.png' },
+    { img: '/images/brand-logos/polylc-logo.png' },
+    { img: '/images/brand-logos/polyscience-logo.png ' },
+    { img: '/images/brand-logos/precision.png ' },
+    { img: '/images/brand-logos/prokan.png ' },
+    { img: '/images/brand-logos/scas-logo.png' },
+     { img: '/images/brand-logos/shodex.jpg' }
+  ];
+
+  slickConfig = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      { breakpoint: 1200, settings: { slidesToShow: 4 }},
+      { breakpoint: 992, settings: { slidesToShow: 3 }},
+      { breakpoint: 768, settings: { slidesToShow: 2 }},
+      { breakpoint: 480, settings: { slidesToShow: 1 }}
+    ]
+  };
 }
+
+

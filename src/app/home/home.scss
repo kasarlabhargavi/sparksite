@@ -1,0 +1,113 @@
+.home-page {
+  margin-top: 120px;
+
+  .left-first {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 40px 20px;
+    height: 100%;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .btn.explore {
+    background-color: #fff;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    border-radius: 20px;
+  }
+  .left-img img,
+  .right-column img {
+    border-radius: 20px;
+  }
+  .mt_10 {
+    margin-top: 20px;
+  }
+  .brand-slider {
+    background: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  .about-section .container-fluid .shadow {
+    padding: 4% 5%;
+  }
+  .about-section .container-fluid .shadow p {
+    padding-right: 40px;
+    text-align: justify;
+  }
+  p.lead {
+    text-align: center;
+    font-weight: 600;
+  }
+  .product-nav-item {
+    padding: 8px 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .product-nav-item.active,
+  .product-nav-item:hover {
+    background-color: #ff0020;
+    color: #fff;
+    border-radius: 0px;
+  }
+  .cards {
+    margin: 0px 40px;
+  }
+  .single-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #212529;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .single-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .single-img .text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .verticals-section .card-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .single-img:hover img {
+    opacity: 1;
+  }
+  .single-img:hover .text {
+    opacity: 0;
+  }
+}

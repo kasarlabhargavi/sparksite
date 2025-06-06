@@ -1,6 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { CommonModule } from '@angular/common';
@@ -22,7 +22,8 @@ import { ContactUs } from './contact-us/contact-us';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    CustomCommonModule
+    CustomCommonModule,
+    SlickCarouselModule
 ],
   providers: [
     provideBrowserGlobalErrorListeners()

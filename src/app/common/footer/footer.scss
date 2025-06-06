@@ -1,0 +1,46 @@
+.footer {
+  .footer-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .footer-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+
+    &:hover {
+      color: #d10000;
+      text-decoration: underline;
+    }
+  }
+
+  .social-icons a {
+    color: #fff;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+
+    &:hover {
+      color: #d10000;
+    }
+  }
+.list-unstyled li a, p, .footer-link{
+   font-size: 18px !important;
+   color: #000;
+    font-weight: 300;
+     &:hover {
+      color: #d10000;
+    }
+}
+  h6 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+}

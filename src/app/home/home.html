@@ -1,41 +1,285 @@
-<div class="container-fluid py-5">
-    <div class="container">
-        <div class="row" data-aos="fade-right" data-aos-delay="300">
-            <div class="col-12 col-lg-2"></div>
-            <div class="col-12 col-lg-8 text-center">
-                <h2 class="top-heading">Spark</h2>
-                <h4 class="heading">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has
-                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into
-                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus
-                    PageMaker including versions of Lorem Ipsum.
-                </h4>
+<section class="home-page">
+  <div class="future">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-stretch">
+        <!-- Left Column -->
+        <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
+          <div class="left-column h-100 d-flex flex-column">
+            <div class="left-first" data-aos="flip-up" data-aos-delay="500">
+              <h1 class="color fs_30">
+                Future of <br />
+                Medicine
+              </h1>
+              <p class="text-white">Two stacked images</p>
+              <button type="button" class="btn explore">Explore</button>
             </div>
-            <div class="col-12 col-lg-2"></div>
+            <div class="img-card left-img mt_10 rounded-4" data-aos="fade-up">
+              <img
+                src="/images/homepage/future-2.jpg"
+                width="100%"
+                alt="Research Equipment"
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="row pt-3" data-aos="fade-up">
-            <div class="col-12">
-                <p class="text-gray-600">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to
-                    make a type specimen book. It has survived not only five centuries, but also the leap into
-                    electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                    Aldus
-                    PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
+        <!-- Right Column -->
+        <div class="col-md-6 col-12">
+          <div class="right-column h-100 rounded-4">
+            <img
+              src="/images/homepage/8.jpeg"
+              width="100%"
+              alt="Microscope and Beakers"
+              class="h-100 w-100 object-fit-cover"
+            />
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  <!-- brand logos -->
+  <div class="brand_logos my-5">
+    <div class="container-fluid" data-aos="flip-up" data-aos-delay="500">
+      <ngx-slick-carousel class="brand-slider" [config]="slickConfig">
+        <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide">
+          <img [src]="brand.img" [alt]="brand" class="img-fluid" />
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+
+  <!-- about us -->
+  <div class="about-section m-3">
+    <div class="container-fluid" data-aos="flip-up" data-aos-delay="500">
+      <div class="row bg-white rounded-4 align-items-center shadow">
+        <!-- Left Column: Text Content -->
+        <div class="col-md-7">
+          <h2 class="h2_28 color">About Us</h2>
+          <p class="mt_20">
+            Spark Scientific is a wholly owned subsidiary of an Indian company
+            that has over 35 years of presence in India. While the parent
+            company caters to the scientific research community to meet their
+            specialized instruments need, Spark Scientific will focus on 4
+            specific markets verticals - Chromatography consumables, In-Vitro
+            Diagnostics, Life Sciences and General Lab Instruments.
+            <br />
+            Customer expectations and deliverables are different for capital
+            equipments and off-the-shelf/ready-to-use instruments and
+            consumables and Spark Scientific operations aims to address the
+            demands of customers better as an independent entity. Headquartered
+            in Hyderabad, Central India, Spark Scientific has presence in
+            multiple cities across India offering sales and post sales support.
+          </p>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="col-md-5 text-center">
+          <img
+            src="/images/homepage/5.jpeg"
+            alt="Scientist working in lab"
+            class="img-fluid rounded-3"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products-pick py-5 text-white">
+    <div class="container-fluid text-center mb-4" data-aos="flip-up" data-aos-delay="500">
+     <h2 class="h2_28 color">Pick a product to start</h2>
+      <p class="lead">Our Professional team will assist you.</p>
+    </div>
+
+    <div class="container mb-4">
+      <div
+        class="product-menu d-flex align-items-center justify-content-between px-3 bg-white rounded-pill shadow-sm"
+      >
+        <span class="product-nav-arrow text-danger fs-4">&lt;</span>
+        <div class="product-nav d-flex overflow-auto mx-2">
+          <a href="#" class="product-nav-item active"
+            >Magnetic Hotplate Stirrer</a
+          >
+          <a href="#" class="product-nav-item">Overhead Stirrers</a>
+          <a href="#" class="product-nav-item">Rotary Evaporators</a>
+          <a href="#" class="product-nav-item">Centrifuges</a>
+          <a href="#" class="product-nav-item">Shakers</a>
+        </div>
+        <span class="product-nav-arrow text-danger fs-4">&gt;</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center p-2">
+        <div class="col-md-6 col-12 text-center mb-4 mb-md-0">
+          <img
+            src="/images/homepage/9.jpeg"
+            alt="Magnetic Hotplate Stirrer"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6 col-12">
+          <h2>Magnetic Hotplate Stirrer</h2>
+          <ul class="list-unstyled mt-3">
+            <li>LED digital hotplate stirrers</li>
+            <li>Analog stirrers</li>
+            <li>Rotation speed of up to 1500 rpm</li>
+          </ul>
+          <div class="mt-4">
+            <a href="#" class="btn btn-outline-light me-2">Know More</a>
+            <a href="#" class="btn btn-outline-light">Download Brochure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="verticals-section py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="h2_28 color">Verticals</h2>
+          <div class="cards">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-sm-12 col-md-6">
+                <div class="single-img shadow">
+                  <img
+                    src="/images/homepage/4.jpeg"
+                    alt="Avatar"
+                    class="img-fluid"
+                  />
+                  <div class="text">
+                    <h5 class="card-title pb-3">General Lab Instruments</h5>
+                    <p class="card-text">
+                      One-stop supplier of a wide range of general laboratory
+                      devices & instruments covering chemical, biological,
+                      environmental, forensic, food and clinical diagnostic
+                      applications. Our products provide comfort, accuracy and
+                      convenience to conduct safe and efficient experiments
+                      during research. We are experienced in developing and
+                      providing customised products suitable for end user
+                      applications. By partnering with many prestigious
+                      companies throughout the world Our product offerings
+                      widely cover - Pipettes, Magnetic Stirrers, Rotary
+                      Evaporators, Thermal Control Products (Dry Bath, Thermo
+                      Mix), UV Spectrophotometers to name a few.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-sm-12 col-md-6">
+                <div class="single-img shadow">
+                  <img
+                    src="/images/homepage/3.jpeg"
+                    alt="Avatar"
+                    class="img-fluid"
+                  />
+                  <div class="text">
+                    <h5 class="card-title pb-3">HEALTH CARE</h5>
+                    <p class="card-text">
+                      Our healthcare vertical with partnership with famous
+                      brands from across the world has solutions to enhance
+                      productivity and the quality of care in small to
+                      medium-size in vitro diagnostic laboratories. Our
+                      offerings include products for clinical chemistry, blood
+                      gas, electrolyte,hematology analyzers,Elisa Readers,
+                      Immuno Analyzers. Some of the well known brands we
+                      represent - Medica USA, Prokan, Cavidi, Boditech and
+                      Diatron.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Card 3 -->
+              <div class="col-md-6 col-12 pt-5">
+                <div class="single-img shadow">
+                  <img
+                    src="/images/homepage/5.jpeg"
+                    alt="Avatar"
+                    class="img-fluid"
+                  />
+                  <div class="text">
+                    <h5 class="card-title pb-3">COLUMNS & CONSUMABLES</h5>
+                    <p class="card-text">
+                      Complete Range of HPLC Columns - from popular brands ,to
+                      name a few, like Shodex (SEC, Sugar, IC,HILIC), Macherey
+                      Nagel (Nulceodur, Nucleoshell, Nucleosil), ES Industries
+                      (UPLC, HPLC, SFC Columns) and Sepax. Consumables from
+                      reputed brands,to name a few, like Thermo Fisher
+                      Scientific (Auto sampler, Vials,crimpers, de-capper) and
+                      LGC (Impurity and API Standards).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-6 col-12 pt-5">
+                <div class="single-img shadow">
+                  <img
+                    src="/images/homepage/6.jpeg"
+                    alt="Avatar"
+                    class="img-fluid"
+                  />
+                  <div class="text">
+                    <h5 class="card-title pb-3">LIFE SCIENCES</h5>
+                    <p class="card-text">
+                      As part of our offerings int he lifesciences division we
+                      have partnered with LICOR USA, for - imagers, analysis
+                      software, reagents, and consumables for drug discovery,
+                      protein research, and small animal imaging and we also
+                      have a parnetship with Precision X-Ray, USA for
+                      Preclinical X-ray Irradiation and Imaging Research
+                      Systems.We provide complete research solutions and support
+                      for Western blot, targeted therapeutic, virology, and
+                      microbiome studies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-section py-5 text-white text-center">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <!-- Blog -->
+            <div class="col-md-6 col-12">
+              <h4 class="mb-2">Blog</h4>
+              <div class="bg-dark text-white rounded-4">
+                <img
+                  src="/images/homepage/3.jpeg"
+                  class="card-img-top rounded-4"
+                  alt="Blog Image"
+                />
+              </div>
+              <div class="blog-content rounded-4">
+                <p>Stay updated with our latest lab trends, technology tips,</p>
+                <a href="#" class="btn px-4">Read More</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="col-md-6 col-12">
+              <h4 class="mb-2">LinkedIn</h4>
+              <div class="bg-dark text-white rounded-4">
+                <img
+                  src="/images/homepage/3.jpeg"
+                  class="card-img-top rounded-4"
+                  alt="LinkedIn Image"
+                />
+              </div>
+              <div class="linked-body rounded-4">
+                <p>
+                  Join our professional network and stay in sync with project
+                  updates.
+                </p>
+                <a href="#" class="btn rounded-pill px-4">Follow Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

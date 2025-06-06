@@ -1,0 +1,44 @@
+.navi-bar {
+  margin: 20px 10px;
+
+  .navbar {
+    padding: 10px 20px;
+
+    .navbar-brand img {
+      width: 120px;
+      height: auto;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+
+      .nav-item {
+        position: relative;
+
+        .nav-link {
+          color: #000;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0 16px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #d10000;
+          }
+        }
+
+        &:not(:first-child)::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 16px;
+          width: 1px;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
