@@ -2,7 +2,7 @@
   <div class="future">
     <div class="container-fluid">
       <div class="row d-flex align-items-stretch">
-        <!-- Left Column -->
+
         <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
           <div class="left-column h-100 d-flex flex-column">
             <div class="left-first" data-aos="flip-up" data-aos-delay="500">
@@ -22,8 +22,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Right Column -->
         <div class="col-md-6 col-12">
           <div class="right-column h-100 rounded-4">
             <img
@@ -37,11 +35,11 @@
       </div>
     </div>
   </div>
-  <!-- brand logos -->
+    <!-- brand logos -->
   <div class="brand_logos my-5">
-    <div class="container-fluid" data-aos="flip-up" data-aos-delay="500">
+    <div class="container-fluid">
       <ngx-slick-carousel class="brand-slider" [config]="slickConfig">
-        <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide">
+        <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide"  data-aos="flip-up" data-aos-delay="500">
           <img [src]="brand.img" [alt]="brand" class="img-fluid" />
         </div>
       </ngx-slick-carousel>
@@ -49,11 +47,11 @@
   </div>
 
   <!-- about us -->
-  <div class="about-section m-3">
-    <div class="container-fluid" data-aos="flip-up" data-aos-delay="500">
+    <div class="about-section m-3">
+     <div class="container-fluid">
       <div class="row bg-white rounded-4 align-items-center shadow">
         <!-- Left Column: Text Content -->
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="flip-up" data-aos-delay="500">
           <h2 class="h2_28 color">About Us</h2>
           <p class="mt_20">
             Spark Scientific is a wholly owned subsidiary of an Indian company
@@ -73,7 +71,7 @@
         </div>
 
         <!-- Right Column: Image -->
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 text-center" data-aos="flip-up" data-aos-delay="500">
           <img
             src="/images/homepage/5.jpeg"
             alt="Scientist working in lab"
@@ -83,8 +81,10 @@
       </div>
     </div>
   </div>
-  <div class="products-pick py-5 text-white">
-    <div class="container-fluid text-center mb-4" data-aos="flip-up" data-aos-delay="500">
+
+  <!-- products -->
+   <div class="products-pick py-5 text-white">
+    <div class="container-fluid text-center mb-4" >
      <h2 class="h2_28 color">Pick a product to start</h2>
       <p class="lead">Our Professional team will assist you.</p>
     </div>
@@ -109,14 +109,14 @@
 
     <div class="container">
       <div class="row align-items-center p-2">
-        <div class="col-md-6 col-12 text-center mb-4 mb-md-0">
+        <div class="col-md-6 col-12 text-center mb-4 mb-md-0" data-aos="flip-up" data-aos-delay="500">
           <img
             src="/images/homepage/9.jpeg"
             alt="Magnetic Hotplate Stirrer"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12" data-aos="flip-up" data-aos-delay="500">
           <h2>Magnetic Hotplate Stirrer</h2>
           <ul class="list-unstyled mt-3">
             <li>LED digital hotplate stirrers</li>
@@ -131,14 +131,13 @@
       </div>
     </div>
   </div>
-
-   <div class="verticals-section py-5 bg-white text-center">
+     <div class="verticals-section py-5 bg-white text-center">
         <div class="container">
             <h2 class="h2_28 color">Verticals</h2>
           <div class="cards">
             <div class="row">
               <!-- Card 1 -->
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6" data-aos="flip-up" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/4.jpeg"
@@ -166,7 +165,7 @@
               </div>
 
               <!-- Card 2 -->
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6" data-aos="flip-up" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/3.jpeg"
@@ -192,7 +191,7 @@
             </div>
             <div class="row">
               <!-- Card 3 -->
-              <div class="col-md-6 col-12 pt-5">
+              <div class="col-md-6 col-12 pt-5" data-aos="flip-up" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/5.jpeg"
@@ -215,7 +214,7 @@
               </div>
 
               <!-- Card 4 -->
-              <div class="col-md-6 col-12 pt-5">
+              <div class="col-md-6 col-12 pt-5" data-aos="flip-up" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/6.jpeg"
