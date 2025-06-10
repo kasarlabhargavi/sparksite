@@ -3,7 +3,7 @@
 
   .left-first {
     background-color: #333;
-    border-radius: 20px;
+
     padding: 40px 20px;
     height: 100%;
   }
@@ -17,18 +17,17 @@
     font-weight: 500;
     font-size: 15px;
     color: #000;
-    border-radius: 20px;
+
   }
   .left-img img,
   .right-column img {
-    border-radius: 20px;
+
   }
   .mt_10 {
     margin-top: 20px;
   }
   .brand-slider {
     background: #fff;
-    border-radius: 30px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -44,10 +43,11 @@
     text-align: center;
     font-weight: 600;
   }
+  .products-pick{
   .product-nav-item {
     padding: 8px 25px;
     font-size: 20px;
-    border-radius: 20px;
+
     background-color: transparent;
     color: #000;
     font-weight: 500;
@@ -60,6 +60,11 @@
     color: #fff;
     border-radius: 0px;
   }
+  .product-nav {
+    gap: 1rem;
+    white-space: nowrap;
+}
+}
   .cards {
     margin: 0px 40px;
   }
@@ -70,7 +75,7 @@
     background-color: #212529;
     color: white;
     overflow: hidden;
-    border-radius: 10px;
+    // border-radius: 10px;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -97,6 +102,7 @@
     z-index: 2;
     transition: opacity 0.5s ease-in-out;
   }
+
   .verticals-section .card-title {
     font-weight: 800;
     font-size: 24px;
@@ -110,4 +116,69 @@
   .single-img:hover .text {
     opacity: 0;
   }
+
+  .linked-body,
+  .blog-content {
+    background-color: #333;
+    padding: 30px 50px;
+    margin-top: 30px;
+  }
+  .Contact-us a.btn,
+  .social-section a.btn {
+    background-color: #ff0020;
+    color: #fff;
+    padding: 6px 6px;
+    font-weight: 600;
+    // border-radius: 10px !important;
+  }
+  .social-section {
+    a.btn {
+      background-color: #ff0020;
+      color: #fff;
+      padding: 6px 6px;
+      font-weight: 600;
+      // border-radius: 10px !important;
+    }
+  }
+  .Contact-us {
+    .content {
+      margin-top: 40px;
+      background-color: #333;
+      color: #fff;
+
+      padding: 20px;
+    }
+    .Contact-us a.btn {
+      background-color: #ff0020;
+      color: #fff;
+      padding: 6px 6px;
+      font-weight: 600;
+      // border-radius: 10px !important;
+    }
+  }
+}
+@media screen and (max-width: 765px){
+  .home-page {
+    .h2_28{
+    font-size: 35px;
+  }
+    .future{
+     .right-column {
+        margin-top: 20px;
+    }
+  }
+  .about-section .container-fluid .shadow p{
+    padding-right: 0px;
+  }
+
+  .verticals-section{
+  .single-img {
+    height: 100%;
+    padding: 2rem;
+  }
+  #card-box{
+  margin-bottom: 20px;
+  }
+  }
+}
 }

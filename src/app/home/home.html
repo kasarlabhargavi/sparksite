@@ -5,17 +5,17 @@
 
         <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
           <div class="left-column h-100 d-flex flex-column">
-            <div class="left-first" data-aos="flip-up" data-aos-delay="500">
-              <h1 class="color fs_30">
+            <div class="left-first  rounded-4" >
+              <h1 class="color fs_30" data-aos="flip-up" data-aos-delay="500">
                 Future of <br />
                 Medicine
               </h1>
               <p class="text-white">Two stacked images</p>
               <button type="button" class="btn explore">Explore</button>
             </div>
-            <div class="img-card left-img mt_10 rounded-4" data-aos="fade-up">
+            <div class="img-card left-img mt_10 ">
               <img
-                src="/images/homepage/future-2.jpg"
+                src="/images/homepage/future-2.jpg" class="rounded-4"
                 width="100%"
                 alt="Research Equipment"
               />
@@ -23,12 +23,12 @@
           </div>
         </div>
         <div class="col-md-6 col-12">
-          <div class="right-column h-100 rounded-4">
+          <div class="right-column h-100 ">
             <img
               src="/images/homepage/8.jpeg"
               width="100%"
               alt="Microscope and Beakers"
-              class="h-100 w-100 object-fit-cover"
+              class="h-100 w-100 rounded-4 object-fit-cover"
             />
           </div>
         </div>
@@ -37,23 +37,24 @@
   </div>
     <!-- brand logos -->
   <div class="brand_logos my-5">
-    <div class="container-fluid">
-      <ngx-slick-carousel class="brand-slider" [config]="slickConfig">
-        <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide"  data-aos="flip-up" data-aos-delay="500">
-          <img [src]="brand.img" [alt]="brand" class="img-fluid" />
-        </div>
-      </ngx-slick-carousel>
-    </div>
+  <div class="container-fluid">
+    <ngx-slick-carousel class="brand-slider rounded-4" [config]="slickConfig">
+      <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide" data-aos="flip-up" data-aos-delay="500">
+        <img [src]="brand.img" alt="brand logo" class="img-fluid" />
+      </div>
+    </ngx-slick-carousel>
   </div>
+</div>
+
 
   <!-- about us -->
     <div class="about-section m-3">
      <div class="container-fluid">
       <div class="row bg-white rounded-4 align-items-center shadow">
         <!-- Left Column: Text Content -->
-        <div class="col-md-7" data-aos="flip-up" data-aos-delay="500">
+        <div class="col-md-7" >
           <h2 class="h2_28 color">About Us</h2>
-          <p class="mt_20">
+          <p class="mt_20" data-aos="flip-up" data-aos-delay="500">
             Spark Scientific is a wholly owned subsidiary of an Indian company
             that has over 35 years of presence in India. While the parent
             company caters to the scientific research community to meet their
@@ -71,11 +72,11 @@
         </div>
 
         <!-- Right Column: Image -->
-        <div class="col-md-5 text-center" data-aos="flip-up" data-aos-delay="500">
+        <div class="col-md-5 text-center" >
           <img
             src="/images/homepage/5.jpeg"
             alt="Scientist working in lab"
-            class="img-fluid rounded-3"
+            class="img-fluid rounded-4"
           />
         </div>
       </div>
@@ -109,14 +110,14 @@
 
     <div class="container">
       <div class="row align-items-center p-2">
-        <div class="col-md-6 col-12 text-center mb-4 mb-md-0" data-aos="flip-up" data-aos-delay="500">
+        <div class="col-md-6 col-12 text-center mb-4 mb-md-0" >
           <img
             src="/images/homepage/9.jpeg"
             alt="Magnetic Hotplate Stirrer"
-            class="img-fluid rounded"
+            class="img-fluid rounded-4"
           />
         </div>
-        <div class="col-md-6 col-12" data-aos="flip-up" data-aos-delay="500">
+        <div class="col-md-6 col-12"  data-aos="flip-up" data-aos-delay="500">
           <h2>Magnetic Hotplate Stirrer</h2>
           <ul class="list-unstyled mt-3">
             <li>LED digital hotplate stirrers</li>
@@ -137,7 +138,7 @@
           <div class="cards">
             <div class="row">
               <!-- Card 1 -->
-              <div class="col-sm-12 col-md-6" data-aos="flip-up" data-aos-delay="500">
+              <div class="col-sm-12 col-md-6  pt-5"  data-aos="flip-left" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/4.jpeg"
@@ -165,8 +166,8 @@
               </div>
 
               <!-- Card 2 -->
-              <div class="col-sm-12 col-md-6" data-aos="flip-up" data-aos-delay="500">
-                <div class="single-img shadow">
+              <div class="col-sm-12 col-md-6 pt-5">
+                <div class="single-img shadow"   data-aos="flip-left">
                   <img
                     src="/images/homepage/3.jpeg"
                     alt="Avatar"
@@ -191,8 +192,8 @@
             </div>
             <div class="row">
               <!-- Card 3 -->
-              <div class="col-md-6 col-12 pt-5" data-aos="flip-up" data-aos-delay="500">
-                <div class="single-img shadow">
+              <div class="col-md-6 col-12 pt-5"  >
+                <div class="single-img shadow"  data-aos="flip-left" >
                   <img
                     src="/images/homepage/5.jpeg"
                     alt="Avatar"
@@ -214,7 +215,7 @@
               </div>
 
               <!-- Card 4 -->
-              <div class="col-md-6 col-12 pt-5" data-aos="flip-up" data-aos-delay="500">
+              <div class="col-md-6 col-12 pt-5"  data-aos="flip-left" data-aos-delay="500">
                 <div class="single-img shadow">
                   <img
                     src="/images/homepage/6.jpeg"
@@ -246,8 +247,8 @@
           <div class="row justify-content-evenly">
             <!-- Blog -->
             <div class="col-md-6 col-12">
-              <h4 class="mb-2">Blog</h4>
-              <div class="bg-dark text-white rounded-4">
+              <h4 class="mb-2 h2_28 color">Blog</h4>
+              <div class="bg-dark text-white rounded-4" >
                 <img
                   src="/images/homepage/3.jpeg"
                   class="card-img-top rounded-4"
@@ -262,7 +263,7 @@
 
             <!-- LinkedIn -->
             <div class="col-md-6 col-12">
-              <h4 class="mb-2">LinkedIn</h4>
+              <h4 class="mb-2 h2_28 color">LinkedIn</h4>
               <div class="bg-dark text-white rounded-4">
                 <img
                   src="/images/homepage/3.jpeg"
@@ -281,4 +282,25 @@
           </div>
         </div>
       </div>
+
+            <!-- Contact Us Full Width -->
+      <section class="Contact-us">
+        <div class="container-fluid">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-8">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.<br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod
+                </p>
+              </div>
+              <div class="col-md-4 text-center contact-us text-md-center">
+                <a href="#" class="btn rounded-pill px-4">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </section>

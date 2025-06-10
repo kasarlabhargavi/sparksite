@@ -1,29 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-background-color: black;
+  background-color: black;
 }
 .my-class {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.color{
+.color {
   color: #ff0020 !important;
 }
-.fs_30{
+.fs_30 {
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.h2_28{
+.h2_28 {
   font-weight: bold;
   font-size: 45px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-p{
-  font-family: 'Open Sans', sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
 }
-.mt_20{
+.mt_20 {
   margin-top: 20px;
 }
+.bg_color {
+  background-color: #ff0020;
+}
+.text_color {
+  color: #fff;
+}
+.secondary_bg_color {
+  background-color: #333;
+}
+
