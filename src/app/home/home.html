@@ -2,20 +2,20 @@
   <div class="future">
     <div class="container-fluid">
       <div class="row d-flex align-items-stretch">
-
         <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
           <div class="left-column h-100 d-flex flex-column">
-            <div class="left-first  rounded-4" >
-              <h1 class="color fs_30" data-aos="flip-up" data-aos-delay="500">
+            <div class="left-first rounded-4">
+              <h1 class="color fs_30" data-aos="flip-up" data-aos-delay="600">
                 Future of <br />
                 Medicine
               </h1>
               <p class="text-white">Two stacked images</p>
               <button type="button" class="btn explore">Explore</button>
             </div>
-            <div class="img-card left-img mt_10 ">
+            <div class="img-card left-img mt_10">
               <img
-                src="/images/homepage/future-2.jpg" class="rounded-4"
+                src="/images/Spark Home page images/aiease_1749542762837.webp"
+                class="rounded-4"
                 width="100%"
                 alt="Research Equipment"
               />
@@ -23,9 +23,9 @@
           </div>
         </div>
         <div class="col-md-6 col-12">
-          <div class="right-column h-100 ">
+          <div class="right-column h-100">
             <img
-              src="/images/homepage/8.jpeg"
+              src="/images/Spark Home page images/aiease_1749542800783.webp"
               width="100%"
               alt="Microscope and Beakers"
               class="h-100 w-100 rounded-4 object-fit-cover"
@@ -35,26 +35,33 @@
       </div>
     </div>
   </div>
-    <!-- brand logos -->
-  <div class="brand_logos my-5">
-  <div class="container-fluid">
-    <ngx-slick-carousel class="brand-slider rounded-4" [config]="slickConfig">
-      <div ngxSlickItem *ngFor="let brand of brands" class="brand-slide" data-aos="flip-up" data-aos-delay="500">
-        <img [src]="brand.img" alt="brand logo" class="img-fluid" />
-      </div>
-    </ngx-slick-carousel>
-  </div>
-</div>
+  <!-- brand logos -->
 
+  <div class="container-fluid">
+    <div class="brand_logos my-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let brand of brandImages">
+            <img
+              [src]="brand.img"
+              alt="Brand Logo"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <!-- about us -->
-    <div class="about-section m-3">
-     <div class="container-fluid">
+  <div class="about-section m-3">
+    <div class="container-fluid">
       <div class="row bg-white rounded-4 align-items-center shadow">
         <!-- Left Column: Text Content -->
-        <div class="col-md-7" >
-          <h2 class="h2_28 color">About Us</h2>
-          <p class="mt_20" data-aos="flip-up" data-aos-delay="500">
+        <div class="col-md-7">
+          <h2 class="h2_28 color" data-aos="flip-up">About Us</h2>
+          <p class="mt_20" data-aos="flip-up">
             Spark Scientific is a wholly owned subsidiary of an Indian company
             that has over 35 years of presence in India. While the parent
             company caters to the scientific research community to meet their
@@ -72,9 +79,9 @@
         </div>
 
         <!-- Right Column: Image -->
-        <div class="col-md-5 text-center" >
+        <div class="col-md-5 text-center">
           <img
-            src="/images/homepage/5.jpeg"
+            src="/images/Spark Home page images/health-care.webp"
             alt="Scientist working in lab"
             class="img-fluid rounded-4"
           />
@@ -84,9 +91,9 @@
   </div>
 
   <!-- products -->
-   <div class="products-pick py-5 text-white">
-    <div class="container-fluid text-center mb-4" >
-     <h2 class="h2_28 color">Pick a product to start</h2>
+  <div class="products-pick py-5 text-white">
+    <div class="container-fluid text-center mb-4">
+      <h2 class="h2_28 color">Pick a product to start</h2>
       <p class="lead">Our Professional team will assist you.</p>
     </div>
 
@@ -110,16 +117,16 @@
 
     <div class="container">
       <div class="row align-items-center p-2">
-        <div class="col-md-6 col-12 text-center mb-4 mb-md-0" >
+        <div class="col-md-6 col-12 text-center mb-4 mb-md-0">
           <img
-            src="/images/homepage/9.jpeg"
+            src="/images/Spark Home page images/wmremove-transformed (1).webp"
             alt="Magnetic Hotplate Stirrer"
             class="img-fluid rounded-4"
           />
         </div>
-        <div class="col-md-6 col-12"  data-aos="flip-up" data-aos-delay="500">
-          <h2>Magnetic Hotplate Stirrer</h2>
-          <ul class="list-unstyled mt-3">
+        <div class="col-md-6 col-12">
+          <h2 data-aos="flip-down">Magnetic Hotplate Stirrer</h2>
+          <ul class="list-unstyled mt-3" data-aos="flip-down">
             <li>LED digital hotplate stirrers</li>
             <li>Analog stirrers</li>
             <li>Rotation speed of up to 1500 rpm</li>
@@ -132,175 +139,185 @@
       </div>
     </div>
   </div>
-     <div class="verticals-section py-5 bg-white text-center">
-        <div class="container">
-            <h2 class="h2_28 color">Verticals</h2>
-          <div class="cards">
-            <div class="row">
-              <!-- Card 1 -->
-              <div class="col-sm-12 col-md-6  pt-5"  data-aos="flip-left" data-aos-delay="500">
-                <div class="single-img shadow">
-                  <img
-                    src="/images/homepage/4.jpeg"
-                    alt="Avatar"
-                    class="img-fluid"
-                  />
-                  <div class="text">
-                    <h5 class="card-title pb-3">General Lab Instruments</h5>
-                    <p class="card-text">
-                      One-stop supplier of a wide range of general laboratory
-                      devices & instruments covering chemical, biological,
-                      environmental, forensic, food and clinical diagnostic
-                      applications. Our products provide comfort, accuracy and
-                      convenience to conduct safe and efficient experiments
-                      during research. We are experienced in developing and
-                      providing customised products suitable for end user
-                      applications. By partnering with many prestigious
-                      companies throughout the world Our product offerings
-                      widely cover - Pipettes, Magnetic Stirrers, Rotary
-                      Evaporators, Thermal Control Products (Dry Bath, Thermo
-                      Mix), UV Spectrophotometers to name a few.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="col-sm-12 col-md-6 pt-5">
-                <div class="single-img shadow"   data-aos="flip-left">
-                  <img
-                    src="/images/homepage/3.jpeg"
-                    alt="Avatar"
-                    class="img-fluid"
-                  />
-                  <div class="text">
-                    <h5 class="card-title pb-3">HEALTH CARE</h5>
-                    <p class="card-text">
-                      Our healthcare vertical with partnership with famous
-                      brands from across the world has solutions to enhance
-                      productivity and the quality of care in small to
-                      medium-size in vitro diagnostic laboratories. Our
-                      offerings include products for clinical chemistry, blood
-                      gas, electrolyte,hematology analyzers,Elisa Readers,
-                      Immuno Analyzers. Some of the well known brands we
-                      represent - Medica USA, Prokan, Cavidi, Boditech and
-                      Diatron.
-                    </p>
-                  </div>
+  <div class="verticals-section py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="h2_28 color">Verticals</h2>
+      <div class="cards">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-sm-12 col-md-3 ">
+              <div class="macbook-card" data-aos="flip-left">
+                <img
+                  src="/images/Spark Home page images/aiease_1749542800783.webp"
+                  alt="MacBook Air"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <h5
+                    class="card-title pb-3"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Smart Science, Simplified Supply.
+                  </h5>
+                  <p
+                    class="card-text"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Your trusted partner for essential lab consumables and
+                    instruments.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <!-- Card 3 -->
-              <div class="col-md-6 col-12 pt-5"  >
-                <div class="single-img shadow"  data-aos="flip-left" >
-                  <img
-                    src="/images/homepage/5.jpeg"
-                    alt="Avatar"
-                    class="img-fluid"
-                  />
-                  <div class="text">
-                    <h5 class="card-title pb-3">COLUMNS & CONSUMABLES</h5>
-                    <p class="card-text">
-                      Complete Range of HPLC Columns - from popular brands ,to
-                      name a few, like Shodex (SEC, Sugar, IC,HILIC), Macherey
-                      Nagel (Nulceodur, Nucleoshell, Nucleosil), ES Industries
-                      (UPLC, HPLC, SFC Columns) and Sepax. Consumables from
-                      reputed brands,to name a few, like Thermo Fisher
-                      Scientific (Auto sampler, Vials,crimpers, de-capper) and
-                      LGC (Impurity and API Standards).
-                    </p>
-                  </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-12 col-md-3 ">
+              <div class="macbook-card" data-aos="flip-left">
+                <img
+                  src="/images/Spark Home page images/aiease_1749542800783.webp"
+                  alt="MacBook Air"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <h5
+                    class="card-title pb-3"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Smart Science, Simplified Supply.
+                  </h5>
+                  <p
+                    class="card-text"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Your trusted partner for essential lab consumables and
+                    instruments.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Card 4 -->
-              <div class="col-md-6 col-12 pt-5"  data-aos="flip-left" data-aos-delay="500">
-                <div class="single-img shadow">
-                  <img
-                    src="/images/homepage/6.jpeg"
-                    alt="Avatar"
-                    class="img-fluid"
-                  />
-                  <div class="text">
-                    <h5 class="card-title pb-3">LIFE SCIENCES</h5>
-                    <p class="card-text">
-                      As part of our offerings int he lifesciences division we
-                      have partnered with LICOR USA, for - imagers, analysis
-                      software, reagents, and consumables for drug discovery,
-                      protein research, and small animal imaging and we also
-                      have a parnetship with Precision X-Ray, USA for
-                      Preclinical X-ray Irradiation and Imaging Research
-                      Systems.We provide complete research solutions and support
-                      for Western blot, targeted therapeutic, virology, and
-                      microbiome studies.
-                    </p>
-                  </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-12 ">
+              <div class="macbook-card" data-aos="flip-left">
+                <img
+                  src="/images/Spark Home page images/aiease_1749542800783.webp"
+                  alt="MacBook Air"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <h5
+                    class="card-title pb-3"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Smart Science, Simplified Supply.
+                  </h5>
+                  <p
+                    class="card-text"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Your trusted partner for essential lab consumables and
+                    instruments.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3 col-12 ">
+              <div class="macbook-card" data-aos="flip-left">
+                <img
+                  src="/images/Spark Home page images/aiease_1749542800783.webp"
+                  alt="MacBook Air"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <h5
+                    class="card-title pb-3"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Smart Science, Simplified Supply.
+                  </h5>
+                  <p
+                    class="card-text"
+                    data-aos="flip-down"
+                    data-aos-delay="600"
+                  >
+                    Your trusted partner for essential lab consumables and
+                    instruments.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="social-section py-5 text-white text-center">
-        <div class="container-fluid">
-          <div class="row justify-content-evenly">
-            <!-- Blog -->
-            <div class="col-md-6 col-12">
-              <h4 class="mb-2 h2_28 color">Blog</h4>
-              <div class="bg-dark text-white rounded-4" >
-                <img
-                  src="/images/homepage/3.jpeg"
-                  class="card-img-top rounded-4"
-                  alt="Blog Image"
-                />
-              </div>
-              <div class="blog-content rounded-4">
-                <p>Stay updated with our latest lab trends, technology tips,</p>
-                <a href="#" class="btn px-4">Read More</a>
-              </div>
-            </div>
+    </div>
+  </div>
+  <div class="social-section py-5 text-white text-center">
+    <div class="container-fluid">
+      <div class="row justify-content-evenly">
+        <!-- Blog -->
+        <div class="col-md-6 col-12">
+          <h4 class="mb-2 h2_28 color">Blog</h4>
+          <div class="bg-dark text-white rounded-4">
+            <img
+              src="/images/general-lab-instruments.webp"
+              class="card-img-top rounded-4"
+              alt="Blog Image"
+            />
+          </div>
+          <div class="blog-content rounded-4">
+            <p>Stay updated with our latest lab trends, technology tips,</p>
+            <a href="#" class="btn px-4">Read More</a>
+          </div>
+        </div>
 
-            <!-- LinkedIn -->
-            <div class="col-md-6 col-12">
-              <h4 class="mb-2 h2_28 color">LinkedIn</h4>
-              <div class="bg-dark text-white rounded-4">
-                <img
-                  src="/images/homepage/3.jpeg"
-                  class="card-img-top rounded-4"
-                  alt="LinkedIn Image"
-                />
-              </div>
-              <div class="linked-body rounded-4">
-                <p>
-                  Join our professional network and stay in sync with project
-                  updates.
-                </p>
-                <a href="#" class="btn rounded-pill px-4">Follow Page</a>
-              </div>
-            </div>
+        <!-- LinkedIn -->
+        <div class="col-md-6 col-12">
+          <h4 class="mb-2 h2_28 color">LinkedIn</h4>
+          <div class="bg-dark text-white rounded-4">
+            <img
+              src="/images/general-lab-instruments.webp"
+              class="card-img-top rounded-4"
+              alt="LinkedIn Image"
+            />
+          </div>
+          <div class="linked-body rounded-4">
+            <p>
+              Join our professional network and stay in sync with project
+              updates.
+            </p>
+            <a href="#" class="btn rounded-pill px-4">Follow Page</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-            <!-- Contact Us Full Width -->
-      <section class="Contact-us">
-        <div class="container-fluid">
-          <div class="content rounded-4">
-            <div class="row">
-              <div class="col-md-8">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.<br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod
-                </p>
-              </div>
-              <div class="col-md-4 text-center contact-us text-md-center">
-                <a href="#" class="btn rounded-pill px-4">Contact Us</a>
-              </div>
-            </div>
+  <!-- Contact Us Full Width -->
+  <section class="Contact-us">
+    <div class="container-fluid">
+      <div class="content rounded-4">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              We’re here to help. Reach out for product inquiries, support, or
+              collaborations. Spark Scientific is just a message away.
+            </p>
+          </div>
+          <div class="col-md-4 text-center contact-us text-md-center">
+            <a href="#" class="btn rounded-pill px-4">Contact Us</a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 </section>

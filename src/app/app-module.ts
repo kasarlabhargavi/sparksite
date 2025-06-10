@@ -22,8 +22,7 @@ import { ContactUs } from './contact-us/contact-us';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    CustomCommonModule,
-    SlickCarouselModule
+    CustomCommonModule
 ],
   providers: [
     provideBrowserGlobalErrorListeners()
